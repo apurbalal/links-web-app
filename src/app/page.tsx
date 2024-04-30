@@ -1,95 +1,52 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import { Button } from '@/component/button';
+import { Divider } from '@/component/divider';
+import { Container } from '@/component/flex';
+import { Heading } from '@/component/heading';
+import { Text } from '@/component/text';
+import { Input } from '@/component/input';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <Container card m-5>
+      <Heading h1>Custom design system</Heading>
+      <Divider />
+      
+      <Container col gap-2 mt-5>
+        <Heading h2>Buttons</Heading>
+        <Divider />
+        <Button>Primary button</Button>
+        <Button outline>Outline button</Button>
+        <Button link>Link button</Button>
+        <Button danger>Danger button</Button>
+        <Button disabled>Disabled button</Button>
+      </Container>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <Container col gap-2 mt-4>
+        <Heading h2>Headings</Heading>
+        <Divider />
+        <Heading h1>Heading 1</Heading>
+        <Heading h2>Heading 2</Heading>
+        <Heading h3>Heading 3</Heading>
+        <Heading h4>Heading 4</Heading>
+        <Heading h5>Heading 5</Heading>
+        <Heading h6>Heading 6</Heading>
+      </Container>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <Container col gap-2 mt-4>
+        <Heading h2>Text</Heading>
+        <Divider />
+        <Text level-sm>Text small</Text>
+        <Text level-md>Text medium</Text>
+        <Text level-lg>Text large</Text>     
+      </Container>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <Container col gap-2 mt-4>
+        <Heading h2>Input</Heading>
+        <Divider />
+        <Input placeholder="Input" />
+      </Container>
+    </Container>
   );
 }
