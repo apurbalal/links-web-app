@@ -1,9 +1,11 @@
-# About this 
+# About this
+
 #### Youtube intro
+
 https://www.youtube.com/watch?v=WQuTBT6IMzw&ab_channel=APU
 
-
 ## Getting Started
+
 First, run the development server:
 
 ```bash
@@ -17,4 +19,3 @@ bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-

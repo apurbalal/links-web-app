@@ -1,5 +1,5 @@
-import { ButtonVariant, CommonProps, mapButtonProps } from '@/utils/styleUtils'
-import { ButtonHTMLAttributes, DetailedHTMLProps } from 'react';
+import { ButtonVariant, CommonProps, mapButtonProps } from "@/utils/styleUtils";
+import { ButtonHTMLAttributes, DetailedHTMLProps } from "react";
 
 export const Button = (
   props: DetailedHTMLProps<
@@ -14,5 +14,5 @@ export const Button = (
     <button className={classNames.join(" ")} {...filteredProps}>
       {props.children}
     </button>
-  )
-}
+  );
+};
