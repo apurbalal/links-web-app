@@ -87,6 +87,7 @@ export const mapButtonProps = (props?: Record<string, any>) =>
 
 const containerProps = [
   "row",
+  "row-rev",
   "col",
   "center",
   "gap-1",
@@ -97,6 +98,8 @@ const containerProps = [
   "fullHeight",
   "spaceBetween",
   "flexWrap",
+  "fg-full",
+  "fg-half",
   "overflow-scroll",
   "scrollBarHidden",
 ] as const;

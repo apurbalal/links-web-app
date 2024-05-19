@@ -87,7 +87,6 @@ input:hover {
 }
 /* Button style end */
 
-
 /* Input style start */
 input {
   border: none;
@@ -152,6 +151,11 @@ hr {
   flex-direction: row;
 }
 
+.row-rev {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
 .col {
   display: flex;
   flex-direction: column;
@@ -199,6 +203,12 @@ hr {
 }
 .scroll-bar-hidden::-webkit-scrollbar {
   display: none;
+}
+.fg-full {
+  flex-grow: 1;
+}
+.fg-half {
+  flex-grow: 0.5;
 }
 /* Flex styles end */
 
@@ -361,4 +371,3 @@ hr {
 .pointer {
   cursor: pointer;
 }
-
