@@ -23,12 +23,12 @@ export default function LoginPage() {
 
   const loginUser = async () => {
     setLoading(true);
-    const user = await setPersistence(auth, browserLocalPersistence).then(
-      () =>  signInWithEmailAndPassword(auth, email, password)
+    const user = await setPersistence(auth, browserLocalPersistence).then(() =>
+      signInWithEmailAndPassword(auth, email, password),
     );
-    
+
     if (user) {
-      router.push("/")
+      router.push("/");
     }
 
     setLoading(false);

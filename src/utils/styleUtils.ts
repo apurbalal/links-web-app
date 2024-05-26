@@ -123,7 +123,7 @@ export const mapContainerProps = (props?: Record<string, any>) =>
       }
     : { classNames: [], filteredProps: [] };
 
-const textVariant = ["level-sm", "level-md", "level-lg"] as const;
+const textVariant = ["level-sm", "level-md", "level-lg", "danger"] as const;
 const textProps = ["textCenter"] as const;
 export type TextVariant = InferProps<typeof textVariant>;
 export type TextProps = InferProps<typeof textProps>;

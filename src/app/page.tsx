@@ -13,9 +13,7 @@ export default function Home() {
   const user = useUserSession();
   return (
     <Container card m-5>
-      <Heading h2>
-        {user ? "user loggedin" : "User not logged in"}
-      </Heading>
+      <Heading h2>{user ? "user loggedin" : "User not logged in"}</Heading>
     </Container>
   );
 }

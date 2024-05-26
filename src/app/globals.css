@@ -125,6 +125,9 @@ hr {
 .text-center {
   text-align: center;
 }
+p.danger {
+  color: var(--danger-color);
+}
 
 /* cards */
 .card {
