@@ -1,5 +1,5 @@
 "use client";
-import { useUserSession } from "@/app/hooks/userUserSession";
+import { useUserSession } from "@/hooks/userUserSession";
 import { Button } from "@/component/button";
 import { Container } from "@/component/flex";
 import { Heading } from "@/component/heading";

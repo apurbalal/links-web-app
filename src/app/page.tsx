@@ -7,7 +7,7 @@ import { Container } from "@/component/flex";
 import { Heading } from "@/component/heading";
 import { Text } from "@/component/text";
 import { Input } from "@/component/input";
-import { useUserSession } from "./hooks/userUserSession";
+import { useUserSession } from "../hooks/userUserSession";
 
 export default function Home() {
   const user = useUserSession();
